@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Cửa Hàng Công Nghệ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav.breadcrumb {
+            padding: 10px;
+            font-size: 16px;
+            background: #f4f4f4;
+        }
+        nav.breadcrumb a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        nav.breadcrumb span {
+            margin: 0 5px;
+            color: #555;
+        }
+        .contact-form {
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .contact-form h2 {
+            text-align: center;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #0056b3;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Liên Hệ</h1>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <a href="index.html">Về Trang Chủ</a>
+        <span>&gt;</span>
+    </nav>
+
+    <!-- Form liên hệ -->
+    <div class="contact-form">
+        <h2>Gửi Thông Tin Liên Hệ</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Họ và Tên</label>
+            <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+            
+            <label for="message">Lời Nhắn</label>
+            <textarea id="message" name="message" rows="5" placeholder="Nhập lời nhắn của bạn" required></textarea>
+            
+            <button type="submit">Gửi Liên Hệ</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+</body>
+</html>

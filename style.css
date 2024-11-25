@@ -1,0 +1,134 @@
+/* Toàn bộ trang */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Đảm bảo trang web có chiều cao đầy đủ */
+    overflow: hidden; /* Không cho phép cuộn trang */
+    position: relative; /* Để video nền có thể phủ toàn bộ */
+}
+
+/* Video nền toàn trang */
+.background-video {
+    position: absolute; /* Đặt video vào vị trí tuyệt đối */
+    top: 50%; /* Đặt video ở giữa chiều dọc */
+    left: 50%; /* Đặt video ở giữa chiều ngang */
+    width: 80%; /* Giảm chiều rộng video xuống 80% */
+    height: 100%; /* Đảm bảo chiều cao thay đổi theo tỷ lệ */
+    transform: translate(-50%, -50%); /* Căn giữa video */
+    object-fit: cover; /* Đảm bảo video phủ toàn bộ mà không bị cắt */
+    z-index: -1; /* Đặt video dưới tất cả các phần tử khác */
+}
+
+/* Các phần khác */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Nền đen mờ cho header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.login-link {
+    margin-left: auto; /* Đẩy "Đăng Nhập" sang bên phải */
+}
+/* Phần hero */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    z-index: 1;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Phần sản phẩm */
+.products {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1; /* Đặt sản phẩm lên trên video */
+}
+
+.products h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.product-item {
+    border: 2px solid #ddd; /* Màu và độ dày của khung */
+    border-radius: 8px; /* Bo góc */
+    padding: 16px; /* Khoảng cách bên trong khung */
+    width: 250px; /* Độ rộng của khung */
+    text-align: center; /* Căn giữa nội dung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    background-color: #f9f9f9; /* Màu nền */
+    margin: 10px auto; /* Canh giữa */
+}
+.product-item img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá khung */
+    border-radius: 8px; /* Bo góc cho ảnh */
+}
+.product-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.product-item p {
+    font-size: 16px;
+    color: #333;
+}
+.product-item button {
+    background-color: #007bff;
+    color: #fff;
+    border: 4px;
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.product-item button:hover {
+    background-color: #0056b3; /* Hiệu ứng khi rê chuột */
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1; /* Đặt footer lên trên video */
+}
+.login-link {
+    margin-left: auto; /* Đẩy "Đăng Nhập" sang bên phải */
+}
